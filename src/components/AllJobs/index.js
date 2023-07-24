@@ -258,7 +258,7 @@ class AllJobs extends Component {
     ) : (
       <ul className="ul-job-items-container">
         {jobsData.map(eachItem => (
-          <jobItem key={eachItem.id} jobData={eachItem} />
+          <JobItem key={eachItem.id} jobData={eachItem} />
         ))}
       </ul>
     )
@@ -339,7 +339,7 @@ class AllJobs extends Component {
           <div className="side-bar-container">
             {this.onRenderProfileStatus()}
             <hr className="hr-line" />
-            <hr className="text">Type of Employment</hr>
+            <h1 className="text">Type of Employment</h1>
             {this.onGetCheckBoxesView()}
             <hr className="hr-line" />
             <h1 className="text">Salary Range</h1>
